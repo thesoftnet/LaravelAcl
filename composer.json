@@ -2,7 +2,7 @@
     "name": "thesoftnet/laravel-acl",
     "description": "Laravel authentication and ACL package with a cool admin panel",
     "type": "project",
-    "license": "MTI",
+    "license": "MIT",
     "authors": [
         {
             "name": "Anwar",
