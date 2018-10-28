@@ -1,37 +1,38 @@
 {
-    "name": "thesoftnet/laravel-acl",
-    "description": "Laravel authentication and ACL package with a cool admin panel",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Anwar",
-            "email": "thesoftnet4u@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "thesoftnet/authentication-sentry": "^1.0",
-        "laravelcollective/html": "5.6.*",
-        "intervention/image": "2.*",
-        "gregwar/captcha": "1.1.1"
-    },
-	  "require-dev": {
+  "name": "thesoftnet/laravel-acl",
+  "description": "Laravel authentication and ACL package with a cool admin panel",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anwar",
+      "email": "thesoftnet4u@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "laravel/framework": "5.6.*",
+    "thesoftnet/authentication-sentry": "^1.0",
+    "laravelcollective/html": "5.6.*",
+    "intervention/image": "2.*",
+    "gregwar/captcha": "1.1.1"
+  },
+  "require-dev": {
     "phpunit/phpunit": "~5.7",
     "mockery/mockery": "0.9.*",
     "fzaninotto/faker": "~1.4",
     "sebastian/exporter": "^2.0"
   },
-    "autoload": {
-        "psr-4": {
-            "TheSoftNet\\LaravelAcl\\": "app/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "TheSoftNet\\LaravelAcl\\Authentication\\AuthenticationServiceProvider"
-            ]
-        }
+  "autoload": {
+    "psr-4": {
+      "TheSoftNet\\LaravelAcl\\": "app/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TheSoftNet\\LaravelAcl\\Authentication\\AuthenticationServiceProvider"
+      ]
+    }
+  }
 }
