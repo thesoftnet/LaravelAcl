@@ -6,19 +6,26 @@
     "authors": [
         {
             "name": "Anwar",
-            "email": "anwardote@gmail.com"
+            "email": "thesoftnet4u@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-	    "gregwar/captcha": "1.1.1",
+        "thesoftnet/authentication-sentry": "^1.0",
+        "laravelcollective/html": "5.6.*",
         "intervention/image": "2.*",
-        "laravelcollective/html": "5.6.*"
-	},
-	
-	"autoload": {
-    "psr-4": {
-        "App\\": "app/"
+        "gregwar/captcha": "1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheSoftNet\\LaravelAcl\\Authentication\\AuthenticationServiceProvider"
+            ]
+        }
     }
-}
 }
