@@ -1,0 +1,21 @@
+{
+    "name": "thesoftnet/laravel-acl",
+    "description": "Laravel authentication and ACL package with a cool admin panel",
+    "type": "project",
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "Anwar",
+            "email": "anwardote@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	},
+	
+	"autoload": {
+    "psr-4": {
+        "App\\": "app/"
+    }
+}
+}
