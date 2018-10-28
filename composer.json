@@ -27,7 +27,10 @@
      "TheSoftNet\\LaravelAcl\\": "app/"
     }
   },
+
   "extra": {
+    "component": "package",
+    "frameworks": ["Laravel 5"],
     "laravel": {
       "providers": [
         "TheSoftNet\\LaravelAcl\\Authentication\\AuthenticationServiceProvider"
