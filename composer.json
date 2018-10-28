@@ -11,7 +11,6 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "laravel/framework": "5.6.*",
     "thesoftnet/authentication-sentry": "^1.0",
     "laravelcollective/html": "5.6.*",
     "intervention/image": "2.*",
@@ -24,8 +23,8 @@
     "sebastian/exporter": "^2.0"
   },
   "autoload": {
-    "psr-4": {
-      "TheSoftNet\\LaravelAcl\\": "app/"
+    "psr-0": {
+     "TheSoftNet\\LaravelAcl\\": "app/"
     }
   },
   "extra": {
