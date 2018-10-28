@@ -13,7 +13,7 @@
     "require": {
 	    "gregwar/captcha": "1.1.1",
         "intervention/image": "2.*",
-        "laravelcollective/html": "5.6.*",
+        "laravelcollective/html": "5.6.*"
 	},
 	
 	"autoload": {
