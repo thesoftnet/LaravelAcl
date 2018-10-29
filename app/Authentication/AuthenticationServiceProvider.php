@@ -61,7 +61,7 @@ class AuthenticationServiceProvider extends ServiceProvider {
         $this->bindClasses();
 
         // setup views path
-        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'laravel-authentication-acl');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'laravel-acl');
         // include view composers
         require __DIR__ . "/composers.php";
         // include event subscribers
@@ -212,7 +212,7 @@ class AuthenticationServiceProvider extends ServiceProvider {
     protected function publishAssets()
     {
         $this->publishes([
-                                 __DIR__ . '/../../public/packages/jacopo/laravel-authentication-acl' => public_path('packages/jacopo/laravel-authentication-acl'),
+                                 __DIR__ . '/../../public/packages/thesoftnet/laravel-acl' => public_path('packages/thesoftnet/laravel-acl'),
                          ]);
 
     }
@@ -232,7 +232,7 @@ class AuthenticationServiceProvider extends ServiceProvider {
     {
 
         $this->publishes([
-                                 __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/laravel-authentication-acl'),
+                                 __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/laravel-acl'),
                          ]);
     }
 

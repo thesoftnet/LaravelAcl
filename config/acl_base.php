@@ -95,7 +95,7 @@ return [
    | Avatar
    |--------------------------------------------------------------------------
    */
-  "default_avatar_path" => '/packages/jacopo/laravel-authentication-acl/images/avatar.png',
+  "default_avatar_path" => '/packages/thesoftnet/laravel-acl/images/avatar.png',
   /*
    * Set to true if you want to use the user gravatar instead
    */

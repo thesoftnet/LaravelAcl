@@ -37,7 +37,7 @@ To install authentication follow this steps:
 ```
       "require": {
         ...
-        "jacopo/laravel-authentication-acl": "1.4.*"
+        "thesoftnet/laravel-acl": "1.4.*"
       },
       ```
 
@@ -46,7 +46,7 @@ To install authentication follow this steps:
       ```
       "require": {
         ...
-        "jacopo/laravel-authentication-acl": "1.3.*"
+        "thesoftnet/laravel-acl": "1.3.*"
       },
       ```
   
@@ -55,7 +55,7 @@ To install authentication follow this steps:
       ```
       "require": {
           ...
-          "jacopo/laravel-authentication-acl": "1.3.15"
+          "thesoftnet/laravel-acl": "1.3.15"
       },
      ```
 
@@ -64,7 +64,7 @@ To install authentication follow this steps:
       ```
       "require": {
           ...
-          "jacopo/laravel-authentication-acl": "1.3.11"
+          "thesoftnet/laravel-acl": "1.3.11"
       },
       ```
                   

@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
 
-    {!! HTML::style('packages/jacopo/laravel-authentication-acl/css/bootstrap.min.css') !!}
-    {!! HTML::style('packages/jacopo/laravel-authentication-acl/css/style.css') !!}
-    {!! HTML::style('packages/jacopo/laravel-authentication-acl/css/baselayout.css') !!}
-    {!! HTML::style('packages/jacopo/laravel-authentication-acl/css/fonts.css') !!}
+    {!! HTML::style('packages/thesoftnet/laravel-acl/css/bootstrap.min.css') !!}
+    {!! HTML::style('packages/thesoftnet/laravel-acl/css/style.css') !!}
+    {!! HTML::style('packages/thesoftnet/laravel-acl/css/baselayout.css') !!}
+    {!! HTML::style('packages/thesoftnet/laravel-acl/css/fonts.css') !!}
     {!! HTML::style('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') !!}
 
     @yield('head_css')

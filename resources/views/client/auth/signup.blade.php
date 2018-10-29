@@ -7,11 +7,11 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    {!!  HTML::style('packages/jacopo/laravel-authentication-acl/css/bootstrap.min.css')  !!}
-    {!!  HTML::style('packages/jacopo/laravel-authentication-acl/css/style.css')  !!}
-    {!!  HTML::style('packages/jacopo/laravel-authentication-acl/css/strength.css')  !!}
+    {!!  HTML::style('packages/thesoftnet/laravel-acl/css/bootstrap.min.css')  !!}
+    {!!  HTML::style('packages/thesoftnet/laravel-acl/css/style.css')  !!}
+    {!!  HTML::style('packages/thesoftnet/laravel-acl/css/strength.css')  !!}
     {!!  HTML::style('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')  !!}
-    {!!  HTML::style('packages/jacopo/laravel-authentication-acl/css/fonts.css')  !!}
+    {!!  HTML::style('packages/thesoftnet/laravel-acl/css/fonts.css')  !!}
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -125,8 +125,8 @@
     </div>
 </div>
   {{-- Js files --}}
-  {!! HTML::script('packages/jacopo/laravel-authentication-acl/js/vendor/jquery-1.10.2.min.js') !!}
-  {!! HTML::script('packages/jacopo/laravel-authentication-acl/js/vendor/password_strength/strength.js') !!}
+  {!! HTML::script('packages/thesoftnet/laravel-acl/js/vendor/jquery-1.10.2.min.js') !!}
+  {!! HTML::script('packages/thesoftnet/laravel-acl/js/vendor/password_strength/strength.js') !!}
 
   <script>
     $(document).ready(function() {
