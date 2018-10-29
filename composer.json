@@ -29,6 +29,9 @@
     "sebastian/exporter": "^2.0"
   },
   "autoload": {
+    "classmap": [
+      "database"
+    ],
     "psr-0": {
      "TheSoftNet\\LaravelAcl\\": "app/"
     }
