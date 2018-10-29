@@ -12,7 +12,7 @@ use TheSoftNet\LaravelAcl\Authentication\Helpers\FormHelper;
 use TheSoftNet\LaravelAcl\Authentication\Models\Group;
 use TheSoftNet\LaravelAcl\Authentication\Exceptions\UserNotFoundException;
 use TheSoftNet\LaravelAcl\Authentication\Validators\GroupValidator;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use View, Redirect, App, Config;
 
 class GroupController extends Controller
@@ -68,7 +68,7 @@ class GroupController extends Controller
         {
             $obj = $this->f->process($request->all());
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->f->getErrors();
             // passing the id incase fails editing an already existing item
@@ -83,7 +83,7 @@ class GroupController extends Controller
         {
             $this->f->delete($request->all());
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->f->getErrors();
             return Redirect::route('groups.list')->withErrors($errors);
@@ -103,7 +103,7 @@ class GroupController extends Controller
         {
             $obj = $this->group_repository->update($id, $input);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             return Redirect::route("users.groups.edit")->withInput()->withErrors(new MessageBag(["permissions" => Config::get('acl_messages.flash.error.group_permission_not_found')]));
         }

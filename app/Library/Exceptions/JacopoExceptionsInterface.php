@@ -1,9 +1,9 @@
 <?php namespace TheSoftNet\LaravelAcl\Library\Exceptions;
 /**
- * Interface JacopoExceptionsInterface
+ * Interface TheSoftNetExceptionsInterface
  *
  * To catch multiple exceptions
  *
  * @package Exceptions
  */
-interface JacopoExceptionsInterface {}
+interface TheSoftNetExceptionsInterface {}

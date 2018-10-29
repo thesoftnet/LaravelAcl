@@ -19,7 +19,7 @@ use TheSoftNet\LaravelAcl\Authentication\Models\User;
 use TheSoftNet\LaravelAcl\Authentication\Helpers\FormHelper;
 use TheSoftNet\LaravelAcl\Authentication\Exceptions\UserNotFoundException;
 use TheSoftNet\LaravelAcl\Authentication\Validators\UserValidator;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use TheSoftNet\LaravelAcl\Authentication\Validators\UserProfileValidator;
 use View, Redirect, App, Config;
 use TheSoftNet\LaravelAcl\Authentication\Interfaces\AuthenticateInterface;
@@ -71,7 +71,7 @@ class UserController extends Controller {
         try
         {
             $user = $this->user_repository->find($request->get('id'));
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             $user = new User;
         }
@@ -89,7 +89,7 @@ class UserController extends Controller {
         {
             $user = $this->f->process($request->all());
             $this->profile_repository->attachEmptyProfile($user);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             DbHelper::rollback();
             $errors = $this->f->getErrors();
@@ -108,7 +108,7 @@ class UserController extends Controller {
         try
         {
             $this->f->delete($request->all());
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->f->getErrors();
             return Redirect::route('users.list')->withErrors($errors);
@@ -125,7 +125,7 @@ class UserController extends Controller {
         try
         {
             $this->user_repository->addGroup($user_id, $group_id);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             return Redirect::route('users.edit', ["id" => $user_id])
                            ->withErrors(new MessageBag(["name" => Config::get('acl_messages.flash.error.user_group_not_found')]));
@@ -142,7 +142,7 @@ class UserController extends Controller {
         try
         {
             $this->user_repository->removeGroup($user_id, $group_id);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             return Redirect::route('users.edit', ["id" => $user_id])
                            ->withErrors(new MessageBag(["name" => Config::get('acl_messages.flash.error.user_group_not_found')]));
@@ -162,7 +162,7 @@ class UserController extends Controller {
         try
         {
             $obj = $this->user_repository->update($id, $input);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             return Redirect::route("users.edit")->withInput()
                            ->withErrors(new MessageBag(["permissions" => Config::get('acl_messages.flash.error.user_permission_not_found')]));
@@ -202,7 +202,7 @@ class UserController extends Controller {
         try
         {
             $service->processForm($input);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $service->getErrors();
             return Redirect::back()
@@ -248,7 +248,7 @@ class UserController extends Controller {
         try
         {
             $service->register($request->all());
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             return Redirect::route('user.signup')->withErrors($service->getErrors())->withInput();
         }
@@ -270,7 +270,7 @@ class UserController extends Controller {
         try
         {
             $this->register_service->checkUserActivationCode($email, $token);
-        } catch(JacopoExceptionsInterface $e)
+        } catch(TheSoftNetExceptionsInterface $e)
         {
             return View::make('laravel-acl::client.auth.email-confirmation')->withErrors($this->register_service->getErrors());
         }

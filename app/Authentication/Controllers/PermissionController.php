@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use TheSoftNet\LaravelAcl\Library\Form\FormModel;
 use TheSoftNet\LaravelAcl\Authentication\Models\Permission;
 use TheSoftNet\LaravelAcl\Authentication\Validators\PermissionValidator;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use View, Redirect, App, Config;
 
 class PermissionController extends Controller
@@ -42,7 +42,7 @@ class PermissionController extends Controller
         {
             $obj = $this->r->find($request->get('id'));
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $obj = new Permission;
         }
@@ -58,7 +58,7 @@ class PermissionController extends Controller
         {
             $obj = $this->f->process($request->all());
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->f->getErrors();
             // passing the id incase fails editing an already existing item
@@ -74,7 +74,7 @@ class PermissionController extends Controller
         {
             $this->f->delete($request->all());
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->f->getErrors();
             return Redirect::route('permission.list')->withErrors($errors);

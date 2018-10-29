@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Sentry, Redirect, App, Config;
 use TheSoftNet\LaravelAcl\Authentication\Validators\ReminderValidator;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use TheSoftNet\LaravelAcl\Authentication\Services\ReminderService;
 
 class AuthController extends Controller {
@@ -40,7 +40,7 @@ class AuthController extends Controller {
                                                 "password" => $password
                                              ), $remember);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->authenticator->getErrors();
             return redirect()->route("user.admin.login")->withInput()->withErrors($errors);
@@ -60,7 +60,7 @@ class AuthController extends Controller {
                                                     "password" => $password
                                                ), $remember);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->authenticator->getErrors();
             return redirect()->route("user.login")->withInput()->withErrors($errors);
@@ -103,7 +103,7 @@ class AuthController extends Controller {
             $this->reminder->send($email);
             return redirect()->route("user.reminder-success");
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->reminder->getErrors();
             return redirect()->route("user.recovery-password")->withErrors($errors);
@@ -133,7 +133,7 @@ class AuthController extends Controller {
         {
             $this->reminder->reset($email, $token, $password);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $errors = $this->reminder->getErrors();
             return redirect()->route("user.change-password")->withErrors($errors);

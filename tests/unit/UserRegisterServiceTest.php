@@ -5,7 +5,7 @@ use Illuminate\Support\MessageBag;
 use TheSoftNet\LaravelAcl\Authentication\Exceptions\UserExistsException;
 use TheSoftNet\LaravelAcl\Authentication\Models\User;
 use TheSoftNet\LaravelAcl\Authentication\Services\UserRegisterService;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use Mockery as m;
 
 /**
@@ -146,7 +146,7 @@ class UserRegisterServiceTest extends DbTestCase
     try
     {
       $service->register([]);
-    } catch(JacopoExceptionsInterface $e)
+    } catch(TheSoftNetExceptionsInterface $e)
     {
       $throws_exception = true;
     }

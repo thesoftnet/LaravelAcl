@@ -6,6 +6,6 @@
  */
 
 use Exception;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 
-class PermissionException extends Exception implements JacopoExceptionsInterface {}
+class PermissionException extends Exception implements TheSoftNetExceptionsInterface {}

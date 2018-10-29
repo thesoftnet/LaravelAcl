@@ -6,6 +6,6 @@
  */
 
 use Exception;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 
-class LoginRequiredException extends Exception implements JacopoExceptionsInterface {}
+class LoginRequiredException extends Exception implements TheSoftNetExceptionsInterface {}

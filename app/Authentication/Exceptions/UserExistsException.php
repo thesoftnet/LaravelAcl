@@ -6,6 +6,6 @@
  */
 
 use Exception;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 
-class UserExistsException extends Exception implements JacopoExceptionsInterface {}
+class UserExistsException extends Exception implements TheSoftNetExceptionsInterface {}

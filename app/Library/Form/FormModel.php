@@ -47,7 +47,7 @@ class FormModel implements FormInterface{
     /**
      * Process the input and calls the repository
      * @param array $input
-     * @throws \TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface
+     * @throws \TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface
      */
     public function process(array $input)
     {

@@ -6,7 +6,7 @@ use Config;
 use TheSoftNet\LaravelAcl\Library\Exceptions\MailException;
 use TheSoftNet\LaravelAcl\Authentication\Exceptions\UserNotFoundException;
 use TheSoftNet\LaravelAcl\Library\Exceptions\InvalidException;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 use TheSoftNet\LaravelAcl\Library\Email\MailerInterface;
 use TheSoftNet\LaravelAcl\Authentication\Interfaces\AuthenticatorInterface;
 /**
@@ -69,7 +69,7 @@ class ReminderService {
         {
             $token = $this->auth->getToken($to);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $this->errors->add('mail', static::$INVALID_USER_MAIL);
             throw new UserNotFoundException;
@@ -100,7 +100,7 @@ class ReminderService {
         {
             $user = $this->auth->getUser($email);
         }
-        catch(JacopoExceptionsInterface $e)
+        catch(TheSoftNetExceptionsInterface $e)
         {
             $this->errors->add('user', static::$INVALID_USER_MAIL);
             throw new UserNotFoundException;

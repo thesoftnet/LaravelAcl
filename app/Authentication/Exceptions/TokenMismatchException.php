@@ -6,6 +6,6 @@
  */
 
 use Exception;
-use TheSoftNet\LaravelAcl\Library\Exceptions\JacopoExceptionsInterface;
+use TheSoftNet\LaravelAcl\Library\Exceptions\TheSoftNetExceptionsInterface;
 
-class TokenMismatchException extends Exception implements JacopoExceptionsInterface {}
+class TokenMismatchException extends Exception implements TheSoftNetExceptionsInterface {}
