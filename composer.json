@@ -32,7 +32,7 @@
     "classmap": [
       "database"
     ],
-    "psr-0": {
+    "psr-4": {
      "TheSoftNet\\LaravelAcl\\": "app/"
     }
   },
