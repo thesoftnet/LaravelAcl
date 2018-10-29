@@ -17,8 +17,8 @@
   ],
   "require": {
     "thesoftnet/authentication-sentry": "^1.0",
-    "laravel/framework": "5.6.*",
-    "laravelcollective/html": "5.6.*",
+    "laravel/framework": "5.7.*",
+    "laravelcollective/html": "5.7.*",
     "intervention/image": "2.*",
     "gregwar/captcha": "1.1.1"
   },
