@@ -63,7 +63,7 @@ class UserController extends Controller {
     {
         $users = $this->user_repository->all($request->except(['page']));
 
-        return View::make('laravel-authentication-acl::admin.user.list')->with(["users" => $users, "request" => $request]);
+        return View::make('laravel-acl::admin.user.list')->with(["users" => $users, "request" => $request]);
     }
 
     public function editUser(Request $request)
@@ -77,7 +77,7 @@ class UserController extends Controller {
         }
         $presenter = new UserPresenter($user);
 
-        return View::make('laravel-authentication-acl::admin.user.edit')->with(["user" => $user, "presenter" => $presenter]);
+        return View::make('laravel-acl::admin.user.edit')->with(["user" => $user, "presenter" => $presenter]);
     }
 
     public function postEditUser(Request $request)
@@ -188,7 +188,7 @@ class UserController extends Controller {
         }
         $custom_profile_repo = App::make('custom_profile_repository', [$user_profile->id]);
 
-        return View::make('laravel-authentication-acl::admin.user.profile')->with([
+        return View::make('laravel-acl::admin.user.profile')->with([
                                                                                           'user_profile'   => $user_profile,
                                                                                           "custom_profile" => $custom_profile_repo
                                                                                   ]);
@@ -220,7 +220,7 @@ class UserController extends Controller {
 
         $custom_profile_repo = App::make('custom_profile_repository', [$logged_user->user_profile()->first()->id]);
 
-        return View::make('laravel-authentication-acl::admin.user.self-profile')
+        return View::make('laravel-acl::admin.user.self-profile')
                    ->with([
                                   "user_profile"   => $logged_user->user_profile()
                                                                   ->first(),
@@ -235,10 +235,10 @@ class UserController extends Controller {
         if($enable_captcha)
         {
             $captcha = App::make('captcha_validator');
-            return View::make('laravel-authentication-acl::client.auth.signup')->with('captcha', $captcha);
+            return View::make('laravel-acl::client.auth.signup')->with('captcha', $captcha);
         }
 
-        return View::make('laravel-authentication-acl::client.auth.signup');
+        return View::make('laravel-acl::client.auth.signup');
     }
 
     public function postSignup(Request $request)
@@ -259,7 +259,7 @@ class UserController extends Controller {
     public function signupSuccess(Request $request)
     {
         $email_confirmation_enabled = Config::get('acl_base.email_confirmation');
-        return $email_confirmation_enabled ? View::make('laravel-authentication-acl::client.auth.signup-email-confirmation') : View::make('laravel-authentication-acl::client.auth.signup-success');
+        return $email_confirmation_enabled ? View::make('laravel-acl::client.auth.signup-email-confirmation') : View::make('laravel-acl::client.auth.signup-success');
     }
 
     public function emailConfirmation(Request $request)
@@ -272,9 +272,9 @@ class UserController extends Controller {
             $this->register_service->checkUserActivationCode($email, $token);
         } catch(JacopoExceptionsInterface $e)
         {
-            return View::make('laravel-authentication-acl::client.auth.email-confirmation')->withErrors($this->register_service->getErrors());
+            return View::make('laravel-acl::client.auth.email-confirmation')->withErrors($this->register_service->getErrors());
         }
-        return View::make('laravel-authentication-acl::client.auth.email-confirmation');
+        return View::make('laravel-acl::client.auth.email-confirmation');
     }
 
     public function addCustomFieldType(Request $request)
@@ -346,7 +346,7 @@ class UserController extends Controller {
 
     public function refreshCaptcha()
     {
-        return View::make('laravel-authentication-acl::client.auth.captcha-image')
+        return View::make('laravel-acl::client.auth.captcha-image')
                    ->with(['captcha' => App::make('captcha_validator')]);
     }
 }

@@ -93,7 +93,7 @@ class SentryAuthenticationHelperTest extends TestCase
     public function itCheckCustomProfileEditPermission()
     {
         $custom_profile_edit_permission = ["_profile-editor"];
-        Config::set('laravel-authentication-acl::permissions.edit_custom_profile', $custom_profile_edit_permission);
+        Config::set('laravel-acl::permissions.edit_custom_profile', $custom_profile_edit_permission);
 
         $sentry_helper = new SentryAuthenticatorHelperStub;
 

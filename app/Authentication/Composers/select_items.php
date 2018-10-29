@@ -3,7 +3,7 @@ use TheSoftNet\LaravelAcl\Authentication\Helpers\FormHelper;
 /**
  * permission select
  */
-View::composer(['laravel-authentication-acl::admin.user.edit', 'laravel-authentication-acl::admin.group.edit'], function ($view)
+View::composer(['laravel-acl::admin.user.edit', 'laravel-acl::admin.group.edit'], function ($view)
 {
     $fh = new FormHelper();
     $values_permission = $fh->getSelectValuesPermission();
@@ -12,8 +12,8 @@ View::composer(['laravel-authentication-acl::admin.user.edit', 'laravel-authenti
 /**
  * group select
  */
-View::composer(['laravel-authentication-acl::admin.user.edit', 'laravel-authentication-acl::admin.group.edit',
-                'laravel-authentication-acl::admin.user.search'], function ($view)
+View::composer(['laravel-acl::admin.user.edit', 'laravel-acl::admin.group.edit',
+                'laravel-acl::admin.user.search'], function ($view)
 {
     $fh = new FormHelper();
     $values_group = $fh->getSelectValuesGroups();

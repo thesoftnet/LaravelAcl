@@ -145,7 +145,7 @@ After installing the package you can find all his configuration files under lara
 
     To make use of the sidebar shown in admin area, your view must extend the following template:
 
-    @extends('laravel-authentication-acl::admin.layouts.base-2cols')
+    @extends('laravel-acl::admin.layouts.base-2cols')
 
     Next inside your controller action add the items to the sidebar as follows:
     ```

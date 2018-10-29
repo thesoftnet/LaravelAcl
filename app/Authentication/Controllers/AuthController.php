@@ -21,12 +21,12 @@ class AuthController extends Controller {
 
     public function getClientLogin()
     {
-        return view('laravel-authentication-acl::client.auth.login');
+        return view('laravel-acl::client.auth.login');
     }
 
     public function getAdminLogin()
     {
-        return view('laravel-authentication-acl::admin.auth.login');
+        return view('laravel-acl::admin.auth.login');
     }
 
     public function postAdminLogin(Request $request)
@@ -86,7 +86,7 @@ class AuthController extends Controller {
      */
     public function getReminder()
     {
-        return view("laravel-authentication-acl::client.auth.reminder");
+        return view("laravel-acl::client.auth.reminder");
     }
 
     /**
@@ -115,7 +115,7 @@ class AuthController extends Controller {
         $email = $request->get('email');
         $token = $request->get('token');
 
-        return view("laravel-authentication-acl::client.auth.changepassword", array("email" => $email, "token" => $token) );
+        return view("laravel-acl::client.auth.changepassword", array("email" => $email, "token" => $token) );
     }
 
     public function postChangePassword(Request $request)

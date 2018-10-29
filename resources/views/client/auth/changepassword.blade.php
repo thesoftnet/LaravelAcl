@@ -1,4 +1,4 @@
-@extends('laravel-authentication-acl::client.layouts.base')
+@extends('laravel-acl::client.layouts.base')
 @section('title')
 Change password
 @stop

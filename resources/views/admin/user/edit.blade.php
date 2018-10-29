@@ -1,4 +1,4 @@
-@extends('laravel-authentication-acl::admin.layouts.base-2cols')
+@extends('laravel-acl::admin.layouts.base-2cols')
 
 @section('title')
 Admin area: edit user
@@ -69,12 +69,12 @@ Admin area: edit user
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <h4><i class="fa fa-users"></i> Groups</h4>
-                        @include('laravel-authentication-acl::admin.user.groups')
+                        @include('laravel-acl::admin.user.groups')
 
                         {{-- group permission form --}}
                         <h4><i class="fa fa-lock"></i> Permission</h4>
                         {{-- permissions --}}
-                        @include('laravel-authentication-acl::admin.user.perm')
+                        @include('laravel-acl::admin.user.perm')
                     </div>
                 </div>
             </div>

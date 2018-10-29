@@ -4,7 +4,7 @@ use TheSoftNet\LaravelAcl\Authentication\Classes\Menu\SentryMenuFactory;
 /**
  * menu items available depending on permissions
  */
-View::composer('laravel-authentication-acl::admin.layouts.*', function ($view)
+View::composer('laravel-acl::admin.layouts.*', function ($view)
 {
     $menu_items = SentryMenuFactory::create()->getItemListAvailable();
     $view->with('menu_items', $menu_items);
@@ -13,7 +13,7 @@ View::composer('laravel-authentication-acl::admin.layouts.*', function ($view)
 /**
  * Dashboard sidebar
  */
-View::composer(['laravel-authentication-acl::admin.dashboard.*'], function ($view)
+View::composer(['laravel-acl::admin.dashboard.*'], function ($view)
 {
     $view->with('sidebar_items', [
             "Dashboard" => [
@@ -27,10 +27,10 @@ View::composer(['laravel-authentication-acl::admin.dashboard.*'], function ($vie
  * User sidebar
  */
 View::composer([
-                       'laravel-authentication-acl::admin.user.edit',
-                       'laravel-authentication-acl::admin.user.groups',
-                       'laravel-authentication-acl::admin.user.list',
-                       'laravel-authentication-acl::admin.user.profile',
+                       'laravel-acl::admin.user.edit',
+                       'laravel-acl::admin.user.groups',
+                       'laravel-acl::admin.user.list',
+                       'laravel-acl::admin.user.profile',
                ], function ($view)
 {
     $view->with('sidebar_items', [
@@ -47,7 +47,7 @@ View::composer([
 /**
  *  Group sidebar
  */
-View::composer(['laravel-authentication-acl::admin.group.*'], function ($view)
+View::composer(['laravel-acl::admin.group.*'], function ($view)
 {
     $view->with('sidebar_items', [
             "Groups list" => [
@@ -63,7 +63,7 @@ View::composer(['laravel-authentication-acl::admin.group.*'], function ($view)
 /**
  *  Permission sidebar
  */
-View::composer(['laravel-authentication-acl::admin.permission.*'], function ($view)
+View::composer(['laravel-acl::admin.permission.*'], function ($view)
 {
     $view->with('sidebar_items', [
             "Permissions list" => [
