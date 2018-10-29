@@ -4,7 +4,7 @@ namespace TheSoftNet\LaravelAcl\Authentication\Repository;
 /**
  * Class UserRepository
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use App;
 use Cartalyst\Sentry\Users\UserExistsException as CartaUserExists;

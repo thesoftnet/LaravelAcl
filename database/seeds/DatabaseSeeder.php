@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 /**
  * Class DbSeeder
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class DatabaseSeeder extends Seeder
 {

@@ -5,7 +5,7 @@ use TheSoftNet\LaravelAcl\Authentication\Presenters\UserProfilePresenter;
 /**
  * Class UserProfile
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 
 class UserProfile extends BaseModel

@@ -2,7 +2,7 @@
 /**
  * Class GroupController
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;

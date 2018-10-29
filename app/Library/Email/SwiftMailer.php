@@ -3,7 +3,7 @@
 /**
  * Swift mailer implementation of MailerInterface
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;

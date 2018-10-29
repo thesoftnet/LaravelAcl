@@ -15,7 +15,7 @@ use TheSoftNet\LaravelAcl\Library\Exceptions\ValidationException;
 /**
  * Class UserRegisterService
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class UserRegisterService
 {

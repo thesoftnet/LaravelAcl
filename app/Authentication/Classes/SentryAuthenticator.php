@@ -4,7 +4,7 @@
  * Class SentryAuthenticator
  * Sentry authenticate implementation
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use Illuminate\Support\MessageBag;
 use TheSoftNet\LaravelAcl\Authentication\Exceptions\AuthenticationErrorException;

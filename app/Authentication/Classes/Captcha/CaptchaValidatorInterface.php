@@ -4,7 +4,7 @@ namespace TheSoftNet\LaravelAcl\Authentication\Classes\Captcha;
 /**
  * Class CaptchaValidator
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 interface CaptchaValidatorInterface
 {

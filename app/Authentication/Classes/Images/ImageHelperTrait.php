@@ -7,7 +7,7 @@ use TheSoftNet\LaravelAcl\Library\Exceptions\NotFoundException;
 /**
  * Trait ImageHelperTrait
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 trait ImageHelperTrait {
 

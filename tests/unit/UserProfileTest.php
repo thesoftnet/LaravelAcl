@@ -5,7 +5,7 @@ use TheSoftNet\LaravelAcl\Authentication\Models\UserProfile;
 /**
  * Test UserProfileTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class UserProfileTest extends DbTestCase
 {

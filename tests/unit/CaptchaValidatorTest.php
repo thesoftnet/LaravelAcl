@@ -4,7 +4,7 @@ use Validator;
 /**
  * Test CaptchaValidatorTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class CaptchaValidatorTest extends TestCase {
 

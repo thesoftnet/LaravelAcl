@@ -13,7 +13,7 @@ use TheSoftNet\LaravelAcl\Library\Repository\Interfaces\BaseRepositoryInterface;
 /**
  * Class EloquentUserProfileRepository
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class EloquentUserProfileRepository extends EloquentBaseRepository implements UserProfileRepositoryInterface
 {

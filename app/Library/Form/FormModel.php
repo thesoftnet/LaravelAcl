@@ -4,7 +4,7 @@
  *
  * Class to save form data associated to a model
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use TheSoftNet\LaravelAcl\Library\Validators\ValidatorInterface;
 use TheSoftNet\LaravelAcl\Library\Exceptions\ValidationException;

@@ -2,7 +2,7 @@
 /**
  * Class UserPresenter
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use TheSoftNet\LaravelAcl\Authentication\Presenters\Traits\PermissionTrait;
 use TheSoftNet\LaravelAcl\Library\Presenters\AbstractPresenter;

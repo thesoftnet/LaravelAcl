@@ -3,7 +3,7 @@
 /**
  * Test GroupRepositoryTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use TheSoftNet\LaravelAcl\Authentication\Repository\SentryGroupRepository;
 use Mockery as m;

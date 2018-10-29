@@ -2,7 +2,7 @@
 /**
  * Class MenuItem
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use TheSoftNet\LaravelAcl\Authentication\Helpers\SentryAuthenticationHelper;
 use TheSoftNet\LaravelAcl\Authentication\Interfaces\MenuInterface;

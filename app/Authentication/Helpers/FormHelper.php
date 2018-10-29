@@ -3,7 +3,7 @@
 /**
  * Class FormHelper
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use TheSoftNet\LaravelAcl\Authentication\Repository\EloquentPermissionRepository as PermissionRepository;
 use TheSoftNet\LaravelAcl\Authentication\Repository\SentryGroupRepository;

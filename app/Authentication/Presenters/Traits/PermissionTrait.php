@@ -4,7 +4,7 @@ use TheSoftNet\LaravelAcl\Authentication\Models\Permission;
 /**
  * Trait PermissionTrait
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 trait PermissionTrait
 {

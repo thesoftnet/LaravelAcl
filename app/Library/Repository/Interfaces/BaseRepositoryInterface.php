@@ -2,7 +2,7 @@
 /**
  * Interface BaseRepositoryInterface
  *
- * @author jacopo beschi j.beschi@jacopo.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 interface BaseRepositoryInterface 
 {

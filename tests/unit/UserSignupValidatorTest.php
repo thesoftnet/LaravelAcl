@@ -6,7 +6,7 @@ use TheSoftNet\LaravelAcl\Authentication\Validators\UserSignupValidator;
 /**
  * Test UserSignupValidatorTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class UserSignupValidatorTest extends TestCase {
 

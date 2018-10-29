@@ -5,7 +5,7 @@ use Session;
 /**
  * Class GregWarCaptchaValidator
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class GregWarCaptchaValidator extends CaptchaValidator
 {

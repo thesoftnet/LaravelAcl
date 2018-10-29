@@ -2,7 +2,7 @@
 /**
  * Class UserExistsException
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 
 use Exception;

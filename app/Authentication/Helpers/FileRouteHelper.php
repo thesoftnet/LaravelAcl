@@ -2,7 +2,7 @@
 /**
  * Class FileRouteHelper
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use Config, Route, App;
 use TheSoftNet\LaravelAcl\Authentication\Interfaces\AuthenticationRoutesInterface;

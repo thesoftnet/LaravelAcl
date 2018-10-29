@@ -5,7 +5,7 @@ use App;
 /**
  * Test ProfilePermissionSubscriberTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class ProfilePermissionSubscriberTest extends TestCase {
 

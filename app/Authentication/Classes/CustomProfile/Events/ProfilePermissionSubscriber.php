@@ -5,7 +5,7 @@ use TheSoftNet\LaravelAcl\Authentication\Exceptions\PermissionException;
 /**
  * Class ProfilePermissionSubscriber
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class ProfilePermissionSubscriber
 {

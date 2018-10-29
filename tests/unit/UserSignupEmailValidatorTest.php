@@ -3,7 +3,7 @@
 /**
  * Test UserSignupEmailValidatorTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 use App, Input, Session, Config, Event;
 use TheSoftNet\LaravelAcl\Authentication\Tests\Unit\Traits\Helper;

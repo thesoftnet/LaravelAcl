@@ -10,7 +10,7 @@ use TheSoftNet\LaravelAcl\Authentication\Tests\Unit\Traits\UserFactory;
 /**
  * Test EloquentUserProfileRepositoryTest
  *
- * @author jacopo beschi jacopo@jacopobeschi.com
+ * @author Anwar thesoftnet4u@gmail.com
  */
 class EloquentUserProfileRepositoryTest extends DbTestCase
 {
