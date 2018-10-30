@@ -135,6 +135,17 @@ return array(
 
         'login_attribute' => 'email',
 
+        /*
+        |--------------------------------------------------------------------------
+        | multi login
+        |--------------------------------------------------------------------------
+        |
+        | Enable Sentry user account be used in multiple computers
+        | false is recommended
+        */
+
+        'multiple_login' => false,
+
     ),
 
     /*
